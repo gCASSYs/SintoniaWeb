@@ -1,0 +1,118 @@
+/* =========================
+   Responsividade
+========================= */
+
+/* Tablets e telas medias */
+@media (max-width: 900px) {
+    .conteudo-topo {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .lista-menu {
+        gap: 0.9rem;
+    }
+
+    .conteudo-banner,
+    .conteudo-perguntas {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+        text-align: center;
+    }
+
+    .texto-banner,
+    .imagem-banner {
+        justify-self: center;
+    }
+
+    .lista-destaques,
+    .lista-projetos {
+        grid-template-columns: 1fr;
+        max-width: 26rem;
+    }
+
+    .lista-equipe,
+    .lista-etapas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 36rem;
+    }
+
+    .secao-projetos {
+        padding-bottom: 7rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 640px) {
+    :root {
+        --largura-conteudo: min(100% - 1.25rem, 1090px);
+    }
+
+    .topo {
+        position: relative;
+    }
+
+    .conteudo-topo {
+        min-height: auto;
+        padding: 1rem 0;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.85rem;
+    }
+
+    .logo {
+        width: 3.5rem;
+    }
+
+    .lista-menu {
+        flex-wrap: wrap;
+        gap: 0.7rem 1rem;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+
+    .banner {
+        padding: 3rem 0;
+    }
+
+    .texto-banner p {
+        font-size: 1rem;
+    }
+
+    .secao-sobre {
+        padding-top: 3rem;
+    }
+
+    .cabecalho-secao {
+        flex-direction: column;
+    }
+
+    .logo_inteira {
+        width: min(100%, 12rem);
+    }
+
+    .lista-equipe,
+    .lista-etapas {
+        grid-template-columns: 1fr;
+        max-width: 17rem;
+    }
+
+    .card-equipe.expandido {
+        width: min(95vw, 500px);
+    }
+
+    .secao-equipe,
+    .secao-tempo {
+        padding-block: 3.5rem;
+    }
+
+    .conteudo-perguntas {
+        gap: 2rem;
+    }
+
+    .rodape-inferior {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
